@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UniversalLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJx-iX-sId">
+                                <rect key="frame" x="0.0" y="41" width="600" height="259"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zD-VN-wgN">
+                                <rect key="frame" x="0.0" y="341" width="600" height="259"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WKWebView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LC-gQ-euT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIWebView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7a-Hf-Tpt">
+                                <rect key="frame" x="0.0" y="320" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CJx-iX-sId" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4ra-MP-s2a"/>
+                            <constraint firstItem="6zD-VN-wgN" firstAttribute="height" secondItem="CJx-iX-sId" secondAttribute="height" id="59n-dt-wBU"/>
+                            <constraint firstItem="CJx-iX-sId" firstAttribute="top" secondItem="3LC-gQ-euT" secondAttribute="bottom" id="5as-aq-Qb4"/>
+                            <constraint firstItem="6zD-VN-wgN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7iu-th-L91"/>
+                            <constraint firstAttribute="trailing" secondItem="CJx-iX-sId" secondAttribute="trailing" id="FSO-9e-YSL"/>
+                            <constraint firstItem="I7a-Hf-Tpt" firstAttribute="top" secondItem="CJx-iX-sId" secondAttribute="bottom" constant="20" id="Uml-IX-1SR"/>
+                            <constraint firstItem="6zD-VN-wgN" firstAttribute="top" secondItem="I7a-Hf-Tpt" secondAttribute="bottom" id="YYP-EP-O6k"/>
+                            <constraint firstItem="3LC-gQ-euT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cI8-Ba-lLj"/>
+                            <constraint firstAttribute="trailing" secondItem="3LC-gQ-euT" secondAttribute="trailing" id="gnM-KC-GIK"/>
+                            <constraint firstAttribute="trailing" secondItem="I7a-Hf-Tpt" secondAttribute="trailing" id="k8Y-Ie-hvo"/>
+                            <constraint firstItem="I7a-Hf-Tpt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ojg-KQ-OVs"/>
+                            <constraint firstItem="3LC-gQ-euT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uns-bO-W3v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6zD-VN-wgN" secondAttribute="bottom" id="wOi-ne-7we"/>
+                            <constraint firstAttribute="trailing" secondItem="6zD-VN-wgN" secondAttribute="trailing" id="zZ7-T6-WA9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiWebView" destination="6zD-VN-wgN" id="VXB-Vs-icF"/>
+                        <outlet property="webViewContainer" destination="CJx-iX-sId" id="gpm-Pt-YwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
